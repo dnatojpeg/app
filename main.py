@@ -3,7 +3,7 @@ from utils import parse_fasta
 from image_encoder import encode_sequence_to_image
 
 st.set_page_config(layout="wide")
-st.sidebar.title("DNA to Color Encoder")
+st.sidebar.title("DNA to JPEG")
 
 fasta_sequence = st.sidebar.text_area("Paste FASTA sequence:")
 fasta_file = st.sidebar.file_uploader("Or upload a FASTA file (optional):", type=["fasta","fa", 'txt'])
