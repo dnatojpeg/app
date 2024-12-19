@@ -15,7 +15,7 @@ def kmer_to_color(kmer: str) -> tuple[int, int, int]:
     b = int(bits[16:24], 2)
     return (r, g, b)
 
-def encode_sequence_to_image(dna: str, K: int = 12, scale: int = 10) -> Image.Image:
+def encode_sequence_to_image(dna: str, K: int = 12, scale: int = 100000) -> Image.Image:
     remainder = len(dna) % K
     if remainder != 0:
         dna += 'A' * (K - remainder)  # pad
